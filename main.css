@@ -540,6 +540,7 @@ body {
 
 .contact-text {
   padding-top: 10vh;
+  padding-bottom: 5vh;
   font-size: 1.5vw;
   text-align: center;
 }
@@ -548,26 +549,48 @@ body {
   position: relative;
 }
 
-.gmail {
-  text-align: center;
-}
-
-.gmail a {
-  display: inline-block;
-  color: rgb(0, 0, 0);
-  font-size: 2.5vw;
-  margin-top: 5vh;
-}
-
-.gmail a:hover {
-  color: rgba(59, 56, 56, 0.24);
-}
 
 #copyright {
   position: absolute;
   bottom: 0;
   right: 5vh;
 }
+
+/*メールアイコン*/
+.follow-me {
+  list-style: none;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  overflow: hidden;
+  padding: 0;
+}
+.follow-me li {
+  display: inline-block;
+  margin: 0 15px 80px 0;
+  padding: 0;
+}
+.follow-me li a::before {
+  background-color: #eee;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #333;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 35px;
+  height: 60px; /* Button height */
+  width: 60px; /* Button width */
+  line-height: 60px; /* Button height */
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  text-align: center;
+}
+.follow-me li a:hover::before {
+  color: #fff;
+}
+
+.follow-me li .mail::before { content: "\f0e0"; }
+
+.follow-me li .mail:hover::before { background-color: #FF773E; }
 
 /* レスポンシブ対応 */
 
